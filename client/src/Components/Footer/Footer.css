@@ -1,0 +1,14 @@
+.footer{
+  background-color: #1F2937;
+  height: 7vh;
+  width: 100vw;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4{
+  margin: 0;
+  font-weight: 400;
+}
