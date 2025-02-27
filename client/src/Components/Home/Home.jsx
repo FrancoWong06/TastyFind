@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Home.css";
 
@@ -8,6 +8,22 @@ import { BsStars } from "react-icons/bs";
 import { MdTimeline } from "react-icons/md";
 
 export default function Home() {
+
+  const [address, setAddress] = useState('')
+
+  const handleChange = (e) => {
+    setAddress(e.target.value)
+    console.log(address)
+  }
+
+  const handleSubmit = async () => {
+    try {
+      
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
   return (
     <div className="home-container">
       <div className="home">
@@ -22,6 +38,7 @@ export default function Home() {
               type="text"
               placeholder="Enter an area or postcode"
               className="findFood-input"
+              onChange={handleChange}
             />
             <button className="find-button">
               {" "}

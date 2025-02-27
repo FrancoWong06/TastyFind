@@ -10,13 +10,16 @@ export default function Navbar() {
     <div className="navbar-container">
       <div className="navbar">
         <div className="logo">
-          <LuPizza className="icon"/>
+          <LuPizza className="icon" />
           <NavLink to="/" className="nav-home-logo">
             TastyFind
           </NavLink>
         </div>
 
         <div className="main-nav">
+          <NavLink to="/suggest" className="nav-contact">
+            Suggest
+          </NavLink>
           <NavLink to="/about" className="nav-about">
             About
           </NavLink>
@@ -25,6 +28,6 @@ export default function Navbar() {
           </NavLink>
         </div>
       </div>
-    </div> 
+    </div>
   );
 }

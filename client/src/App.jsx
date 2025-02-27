@@ -10,6 +10,7 @@ import {
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import { Footer } from "./Components/Footer/Footer";
+import Suggest from "./Components/Suggest/Suggest";
 
 function App() {
   return (
@@ -22,7 +23,17 @@ function App() {
               <>
                 <Navbar />
                 <Home />
-                <Footer/>
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/suggest"
+            element={
+              <>
+                <Navbar />
+                <Suggest />
+                <Footer />
               </>
             }
           />
